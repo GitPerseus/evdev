@@ -574,6 +574,62 @@ evdev_enum!(
     BTN_TRIGGER_HAPPY38 = 0x2e5,
     BTN_TRIGGER_HAPPY39 = 0x2e6,
     BTN_TRIGGER_HAPPY40 = 0x2e7,
+    //
+    //Custom buttons
+    //
+    //Cursor movement
+    BTN_XRIGHTCURSOR = 59974, //Cursor right
+    BTN_XLEFTCURSOR = 59975,  //Cursor left
+    BTN_XDOWNCURSOR = 59976,  //Cursor down
+    BTN_XUPCURSOR = 59977,    //Cursor up
+    //Cursor... forward and backwards?
+    BTN_XREL_Z_AXIS_1 = 59978,
+    BTN_XREL_Z_AXIS_2 = 59979,
+    //
+    //Rotative cursor movement?
+    BTN_XREL_RX_AXIS_1 = 59980, //horizontal
+    BTN_XREL_RX_AXIS_2 = 59981,
+    BTN_XREL_RY_AXIS_1 = 59982, //vertical
+    BTN_XREL_RY_AXIS_2 = 59983,
+    BTN_XREL_RZ_AXIS_1 = 59984, //Whatever the third dimensional axis is called
+    BTN_XREL_RZ_AXIS_2 = 59985,
+    //
+    BTN_XRIGHTSCROLL = 59986, //Rightscroll
+    BTN_XLEFTSCROLL = 59987,  //Leftscroll
+    //
+    //???
+    BTN_XREL_DIAL_1 = 59988,
+    BTN_XREL_DIAL_2 = 59989,
+    //
+    BTN_XUPSCROLL = 59990,   //Upscroll
+    BTN_XDOWNSCROLL = 59991, //Downscroll
+    //
+    //Something?
+    BTN_XREL_MISC_1 = 59992,
+    BTN_XREL_MISC_2 = 59993,
+    BTN_XREL_RESERVED_1 = 59994,
+    BTN_XREL_RESERVED_2 = 59995,
+    //
+    //High resolution version of scroll events, sent just after their non-high resolution version.
+    BTN_XHIRES_UPSCROLL = 59996,
+    BTN_XHIRES_DOWNSCROLL = 59997,
+    BTN_XHIRES_RIGHTSCROLL = 59998,
+    BTN_XHIRES_LEFTSCROLL = 59999,
+    /* Original Relative events and their values.
+        REL_X = 0x00,
+        REL_Y = 0x01,
+        REL_Z = 0x02,
+        REL_RX = 0x03,
+        REL_RY = 0x04,
+        REL_RZ = 0x05,
+        REL_HWHEEL = 0x06,
+        REL_DIAL = 0x07,
+        REL_WHEEL = 0x08,
+        REL_MISC = 0x09,
+        REL_RESERVED = 0x0a,
+        REL_WHEEL_HI_RES = 0x0b,
+        REL_HWHEEL_HI_RES = 0x0c
+    */
 );
 
 #[test]
